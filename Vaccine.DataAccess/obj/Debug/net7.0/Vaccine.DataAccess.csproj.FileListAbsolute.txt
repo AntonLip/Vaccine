@@ -1,0 +1,17 @@
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.AssemblyInfo.cs
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.DataAccess.deps.json
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.DataAccess.runtimeconfig.json
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.DataAccess.dll
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.DataAccess.pdb
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.Models.dll
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\bin\Debug\net7.0\Vaccine.Models.pdb
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.csproj.CopyComplete
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.dll
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\refint\Vaccine.DataAccess.dll
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.pdb
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\Vaccine.DataAccess.genruntimeconfig.cache
+C:\Users\USER\Desktop\vaccine\Vaccine\Vaccine.DataAccess\obj\Debug\net7.0\ref\Vaccine.DataAccess.dll

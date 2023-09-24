@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\Patient\AddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VaccinePlanForms\AddVaccinePlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VaccinePlanForms\ListVaccinationPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VaccinesForm\AddVaccine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Patient\PatientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Patient\UpdatePatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VaccinesForm\UpdateVaccineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\VaccinesForm\VaccineListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
