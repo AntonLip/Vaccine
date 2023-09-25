@@ -63,5 +63,11 @@ namespace Vaccine
             var form = new ListVaccinationPlanForm(_petientService, _planService, _vicineService);
             form.Show();
         }
+
+        private void Report_StripMenu_Click(object sender, EventArgs e)
+        {
+            var form = new ReportForm(_petientService, _planService, _vicineService);
+            form.Show();
+        }
     }
 }
