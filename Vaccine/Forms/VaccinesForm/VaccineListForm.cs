@@ -7,12 +7,12 @@ namespace Vaccine.Forms
 {
     public partial class VaccineListForm : Form
     {
-        private readonly IVaccineService _patientService;
+        private readonly IVaccineService _vaccineService;
         private List<Vaccines> _vaccines = new List<Vaccines>();
         public VaccineListForm(IVaccineService vaccineService)
         {
             InitializeComponent();
-            _patientService = vaccineService;
+            _vaccineService = vaccineService;
             UpdateUI();
         }
 
@@ -23,7 +23,7 @@ namespace Vaccine.Forms
                 var deleteItem = VaccineGridView.CurrentCell;
                 if (deleteItem != null)
                 {
-                    var item = _patientService.Remove(_vaccines[(deleteItem.RowIndex)].Id);
+                    var item = _vaccineService.Remove(_vaccines[(deleteItem.RowIndex)].Id);
                     if (item is null)
                         MessageBox.Show("НЕ УДАЛИЛОСЬ");
                 }
@@ -42,9 +42,9 @@ namespace Vaccine.Forms
         {
             try
             {
-                int count = _patientService.GetCountEntity();
+                int count = _vaccineService.GetCountEntity();
                 _vaccines.Clear();
-                _vaccines = (List<Vaccines>)_patientService.GetAll();
+                _vaccines = (List<Vaccines>)_vaccineService.GetAll();
                 VaccineGridView.Rows.Clear();
                 foreach (var vacccine in _vaccines)
                 {
@@ -70,11 +70,22 @@ namespace Vaccine.Forms
             var chooseItem = VaccineGridView.CurrentCell;
             if (chooseItem != null)
             {
-                var form = new UpdateVaccineForm(_patientService, _vaccines[(chooseItem.RowIndex)]);
+                var form = new UpdateVaccineForm(_vaccineService, _vaccines[(chooseItem.RowIndex)]);
                 form.Show();
             }
             else
                 MessageBox.Show("Выберите вакцину");
+        }
+
+        private void VaccineListForm_Activated(object sender, EventArgs e)
+        {
+            UpdateUI();
+        }
+
+        private void Add_Btn_Click(object sender, EventArgs e)
+        {
+            var form = new AddVaccine(_vaccineService);
+            form.Show();
         }
     }
 }

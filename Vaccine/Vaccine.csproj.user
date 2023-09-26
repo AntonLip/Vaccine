@@ -7,6 +7,9 @@
     <Compile Update="Forms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\VaccinationPlanReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\VaccinePlanForms\AddVaccinePlanForm.cs">
       <SubType>Form</SubType>
     </Compile>

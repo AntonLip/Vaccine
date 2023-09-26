@@ -262,6 +262,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "ListVaccinationPlanForm";
             Text = "ListVaccinationPlanForm";
+            Activated += ListVaccinationPlanForm_Activated;
             ((System.ComponentModel.ISupportInitialize)VaccinationPlanGridView).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

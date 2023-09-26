@@ -85,5 +85,10 @@ namespace Vaccine.Forms
             form.Show();
             UpdateUI();
         }
+
+        private void PatientList_Activated(object sender, EventArgs e)
+        {
+            UpdateUI();
+        }
     }
 }

@@ -144,6 +144,7 @@
             Add_Btn.TabIndex = 3;
             Add_Btn.Text = "Добавить";
             Add_Btn.UseVisualStyleBackColor = true;
+            Add_Btn.Click += Add_Btn_Click;
             // 
             // VaccineListForm
             // 
@@ -155,8 +156,8 @@
             Controls.Add(Remove_Btn);
             Controls.Add(VaccineGridView);
             Margin = new Padding(3, 2, 3, 2);
-           
             Text = "Список вакцин";
+            Activated += VaccineListForm_Activated;
             ((System.ComponentModel.ISupportInitialize)VaccineGridView).EndInit();
             ResumeLayout(false);
         }

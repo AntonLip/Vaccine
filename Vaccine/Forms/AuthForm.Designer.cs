@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AuthForm";
+            Login_Tb = new TextBox();
+            Password_Tb = new TextBox();
+            SignIn_Btn = new Button();
+            SuspendLayout();
+            // 
+            // Login_Tb
+            // 
+            Login_Tb.Location = new Point(12, 12);
+            Login_Tb.Name = "Login_Tb";
+            Login_Tb.Size = new Size(286, 23);
+            Login_Tb.TabIndex = 0;
+            Login_Tb.Text = "Логин";
+            // 
+            // Password_Tb
+            // 
+            Password_Tb.Location = new Point(12, 51);
+            Password_Tb.Name = "Password_Tb";
+            Password_Tb.Size = new Size(286, 23);
+            Password_Tb.TabIndex = 1;
+            Password_Tb.Text = "Пароль";
+            // 
+            // SignIn_Btn
+            // 
+            SignIn_Btn.Location = new Point(12, 80);
+            SignIn_Btn.Name = "SignIn_Btn";
+            SignIn_Btn.Size = new Size(286, 23);
+            SignIn_Btn.TabIndex = 2;
+            SignIn_Btn.Text = "Войти";
+            SignIn_Btn.UseVisualStyleBackColor = true;
+            SignIn_Btn.Click += SignIn_Btn_Click;
+            // 
+            // AuthForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(310, 127);
+            Controls.Add(SignIn_Btn);
+            Controls.Add(Password_Tb);
+            Controls.Add(Login_Tb);
+            Name = "AuthForm";
+            Text = "Войти";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox Login_Tb;
+        private TextBox Password_Tb;
+        private Button SignIn_Btn;
     }
 }

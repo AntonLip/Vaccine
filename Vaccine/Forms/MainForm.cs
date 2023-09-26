@@ -9,13 +9,15 @@ namespace Vaccine
         private readonly IPatientService _petientService;
         private readonly IVaccineService _vicineService;
         private readonly IVaccinationPlanService _planService;
+        private readonly IReportService _reportService;
         public MainForm(IPatientService patientService, IVaccineService vicineService,
-            IVaccinationPlanService vaccinationPlanService)
+            IVaccinationPlanService vaccinationPlanService, IReportService reportService)
         {
             InitializeComponent();
             _planService = vaccinationPlanService;
             _petientService = patientService;
             _vicineService = vicineService;
+            _reportService = reportService;
         }
 
         private void Ô‡ˆËÂÌÚ˚ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,8 +68,24 @@ namespace Vaccine
 
         private void Report_StripMenu_Click(object sender, EventArgs e)
         {
-            var form = new ReportForm(_petientService, _planService, _vicineService);
+
+        }
+
+        private void ‚˚ÔÓÎÌÂÌËÂ¬‡ÍˆËÌ‡ˆËËToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new VaccinationPlanReportForm(_petientService, _planService, _vicineService);
             form.Show();
+        }
+
+        private void File_StripMenu_Click(object sender, EventArgs e)
+        {
+            var form = new ReportForm(_reportService);
+            form.Show();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

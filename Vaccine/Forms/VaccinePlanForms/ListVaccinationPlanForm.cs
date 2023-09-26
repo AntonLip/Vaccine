@@ -1,7 +1,6 @@
 ﻿using Vaccine.Forms.VaccinesForm;
 using Vaccine.Models.DbModels;
 using Vaccine.Models.Interfaces.Services;
-using Vaccine.Services;
 
 namespace Vaccine.Forms.VaccinePlanForms
 {
@@ -173,7 +172,7 @@ namespace Vaccine.Forms.VaccinePlanForms
                 var form = new VaccineInjectedForm(_petientService, _vaccinationPlanService, _vaccineService, _vaccinationPlans[(deleteItem.RowIndex)]);
                 form.Show();
             }
-            
+
         }
 
         private void Remove_Btn_Click(object sender, EventArgs e)
@@ -195,6 +194,11 @@ namespace Vaccine.Forms.VaccinePlanForms
                 MessageBox.Show(ex.Message);
             }
 
+            Refresh();
+        }
+
+        private void ListVaccinationPlanForm_Activated(object sender, EventArgs e)
+        {
             Refresh();
         }
     }

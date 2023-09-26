@@ -17,7 +17,7 @@ namespace Vaccine.DataAccess
                 : base(options)
             {
 
-                Database.EnsureCreated();
+                //Database.EnsureCreated();
             }
             public DbSet<Patient> Patients { get; set; }
             public DbSet<Vaccines> Vaccines { get; set; }

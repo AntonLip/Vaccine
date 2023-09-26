@@ -47,12 +47,13 @@
             VaccineGridView.AllowUserToDeleteRows = false;
             VaccineGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             VaccineGridView.Columns.AddRange(new DataGridViewColumn[] { FirstName_DGV, LastName_DGV, Phone_DGV, Address_DGV, BirthDay_DGV, Sex_DGV });
-            VaccineGridView.Location = new Point(12, 12);
+            VaccineGridView.Location = new Point(10, 9);
+            VaccineGridView.Margin = new Padding(3, 2, 3, 2);
             VaccineGridView.Name = "VaccineGridView";
             VaccineGridView.ReadOnly = true;
             VaccineGridView.RowHeadersWidth = 51;
             VaccineGridView.RowTemplate.Height = 29;
-            VaccineGridView.Size = new Size(806, 229);
+            VaccineGridView.Size = new Size(705, 172);
             VaccineGridView.TabIndex = 0;
             // 
             // FirstName_DGV
@@ -105,9 +106,10 @@
             // 
             // Remove_Btn
             // 
-            Remove_Btn.Location = new Point(694, 247);
+            Remove_Btn.Location = new Point(607, 185);
+            Remove_Btn.Margin = new Padding(3, 2, 3, 2);
             Remove_Btn.Name = "Remove_Btn";
-            Remove_Btn.Size = new Size(94, 29);
+            Remove_Btn.Size = new Size(82, 22);
             Remove_Btn.TabIndex = 1;
             Remove_Btn.Text = "Удалить";
             Remove_Btn.UseVisualStyleBackColor = true;
@@ -115,9 +117,10 @@
             // 
             // Add_Btn
             // 
-            Add_Btn.Location = new Point(12, 247);
+            Add_Btn.Location = new Point(10, 185);
+            Add_Btn.Margin = new Padding(3, 2, 3, 2);
             Add_Btn.Name = "Add_Btn";
-            Add_Btn.Size = new Size(94, 29);
+            Add_Btn.Size = new Size(82, 22);
             Add_Btn.TabIndex = 2;
             Add_Btn.Text = "Добавить";
             Add_Btn.UseVisualStyleBackColor = true;
@@ -125,9 +128,10 @@
             // 
             // Update_Btn
             // 
-            Update_Btn.Location = new Point(344, 247);
+            Update_Btn.Location = new Point(301, 185);
+            Update_Btn.Margin = new Padding(3, 2, 3, 2);
             Update_Btn.Name = "Update_Btn";
-            Update_Btn.Size = new Size(94, 29);
+            Update_Btn.Size = new Size(82, 22);
             Update_Btn.TabIndex = 3;
             Update_Btn.Text = "Изменить";
             Update_Btn.UseVisualStyleBackColor = true;
@@ -135,15 +139,17 @@
             // 
             // PatientList
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(856, 306);
+            ClientSize = new Size(749, 230);
             Controls.Add(Update_Btn);
             Controls.Add(Add_Btn);
             Controls.Add(Remove_Btn);
             Controls.Add(VaccineGridView);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PatientList";
             Text = "Список пациентов";
+            Activated += PatientList_Activated;
             ((System.ComponentModel.ISupportInitialize)VaccineGridView).EndInit();
             ResumeLayout(false);
         }

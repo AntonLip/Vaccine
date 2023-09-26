@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Vaccine.Models.Enums;
+﻿using Vaccine.Models.Enums;
 using Vaccine.Models.Interfaces;
 
 namespace Vaccine.Models.DbModels

@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using Vaccine.DataAccess;
 using Vaccine.DataAccess.DisciplinesAPI.DataAccess;
+using Vaccine.Forms;
 using Vaccine.Models;
 using Vaccine.Models.DbModels;
 using Vaccine.Models.Interfaces.Repository;
@@ -30,7 +31,7 @@ namespace Vaccine
             ConfigureServices(services);
             using (ServiceProvider serviceProvider = services.BuildServiceProvider())
             {
-                var form1 = serviceProvider.GetRequiredService<MainForm>();
+                var form1 = serviceProvider.GetRequiredService<AuthForm>();
                 Application.Run(form1);
             }
         }
@@ -43,8 +44,9 @@ namespace Vaccine
             services.AddTransient<IVaccineService, VaccineService>();
             services.AddTransient<IVaccinationPlanService, VaccinationPlanService>();
             services.AddTransient<IPatientService, PatientService>();
+            services.AddTransient<IReportService, ReportService>();
 
-            services.AddScoped<MainForm>();
+            services.AddScoped<AuthForm>();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(GetConnectionString(), new MySqlServerVersion(new Version(8, 0, 11))
                 ));

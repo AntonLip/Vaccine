@@ -67,10 +67,9 @@ namespace Vaccine.Forms.VaccinesForm
                 }
                 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message);
             }
             
         }

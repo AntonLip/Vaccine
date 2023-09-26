@@ -62,6 +62,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(200, 23);
             comboBox1.TabIndex = 2;
+            comboBox1.SelectedValueChanged += comboBox1_SelectedIndexChanged;
             // 
             // dateTimePicker1
             // 
@@ -83,7 +84,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(261, 202);
+            ClientSize = new Size(241, 202);
             Controls.Add(dateTimePicker2);
             Controls.Add(dateTimePicker1);
             Controls.Add(comboBox1);
